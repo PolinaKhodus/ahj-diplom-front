@@ -1,0 +1,181 @@
+.modal-wrapper {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+    background-color: rgba(0, 0, 255, 0.2);
+  }
+  
+  .form-modal {
+    display: flex;
+    flex-direction: column;
+  
+    max-width: 400px;
+  
+    padding: 10px;
+  
+    box-sizing: border-box;
+    border: 2px solid gray;
+    border-radius: 20px;
+  
+    background-color: white;
+  }
+  
+  .form-title {
+    margin-bottom: 5px;
+    padding-bottom: 5px;
+  
+    border-bottom: 1px solid gray;
+    text-align: center;
+    text-transform: uppercase;
+  }
+  
+  form p {
+    margin-bottom: 10px;
+  
+    text-indent: 10px;
+  }
+  
+  .modal-row {
+    display: flex;  
+    align-items: center;
+  }
+  
+  .modal-coords-row {
+    padding-left: 20px;
+    padding-right: 20px;
+    justify-content: space-between;
+  }
+  
+  label {
+    display: flex;
+  
+    align-items: center;
+  }
+  
+  input {
+    display: flex;
+    width: 100px;
+    height: 25px;
+  
+    outline: none;
+  }
+  
+  
+  .modal-btn-row {
+    justify-content: space-around;
+    padding: 10px;
+  }
+  
+  .modal-btn {
+    width: 80px;
+    height: 30px;
+  
+    box-sizing: border-box;
+    border: 2px solid gray;
+    border-radius: 10px;
+  
+    cursor: pointer;
+    outline: none;
+  }
+  
+  .error-box {
+    padding: 5px;
+  
+    color: red;
+    text-align: center;
+    font-style: italic;
+  }
+  
+  /* Edit modal -------------------------------*/
+  .edit-form-modal {
+    width: 400px;
+  }
+  
+  .edit-form-modal textarea {
+    min-height: 50px;
+    margin-bottom: 10px;
+    padding: 10px;
+  
+    outline: none;
+    resize: vertical;
+  }
+  
+  /* Record modal -------------------------------*/
+  .record-form-modal {
+    display: flex;
+    flex-direction: column;
+    width: 40vw;
+    max-width: 100%;
+    min-width: 300px;
+  }
+  
+  @keyframes blink {
+    from { opacity: 1}
+    from { opacity: 0.2}
+  }
+  
+  .record-form-modal .message-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+  
+    text-align: center;
+    color: green;
+    font-weight: 700;
+    letter-spacing: 2px;
+    /* font-style: italic; */
+  
+    animation: blink 2s infinite;
+  }
+  
+  .video_box {
+    width: 200px;
+    height: 170px;
+  }
+  
+  .record-form-modal .modal-row {
+    padding-left: 20%;
+    padding-right: 20%;
+  }
+  
+  .record-btn {
+    width: 35px;
+    height: 35px;
+  
+    border-radius: 50%;
+    outline: none;
+    cursor: pointer;
+  
+    background-size: 20px;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  
+  .save-record-btn {
+    background-image: url("../img/check.png");
+    border-color: green;
+    background-color: palegreen;
+  }
+  
+  .cancel-record-btn {
+    background-image: url("../img/cancel.png");
+    border-color: red;
+    background-color: salmon;
+  }
+  
+  .timer {
+    padding: 5px 10px;
+  
+    color: white;
+    border: 2px solid seagreen;
+    border-radius: 5px;
+    background-color: silver;
+  }

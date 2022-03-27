@@ -1,0 +1,254 @@
+@font-face {
+  font-family: 'FontAwesome';
+  src: url('../fonts/fontawesome-webfont.eot?v=4.7.0');
+  src: url('../fonts/fontawesome-webfont.eot?#iefix&v=4.7.0') format('embedded-opentype'),
+       url('../fonts/fontawesome-webfont.woff2?v=4.7.0') format('woff2'),
+       url('../fonts/fontawesome-webfont.woff?v=4.7.0') format('woff'),
+       url('../fonts/fontawesome-webfont.ttf?v=4.7.0') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.icon,
+.status_icon {  
+  position: relative;
+  display: flex;  
+  width: 30px;
+  height: 30px; 
+
+  box-sizing: border-box;
+  justify-content: center;
+  align-items: center;
+  font-family: "FontAwesome";
+  font-size: 14px;
+
+  border: 1px solid gray;  
+
+  opacity: 0.8;  
+  user-select: none;
+}
+
+.icon {
+  border-radius: 7px;
+  cursor: pointer;
+}
+
+.status_icon {
+  border-radius: 50%;
+}
+
+.icon:hover {
+  border-width: 2px;
+  opacity: 1;
+
+  transform: scale(1.1);
+}
+
+.icon:not(:last-of-type),
+.status_icon:not(:last-of-type) {
+  margin-right: 5px;
+}
+
+.manager-aside .icon {
+  margin-right: 10px;
+  background-color: beige;
+}
+
+.icon.active {
+  pointer-events: auto;
+  background-color: lightgray;
+  border-width: 2px;
+  opacity: 1;
+}
+
+.send_icon.active {
+  color: white;
+  background-color: mediumaquamarine;
+}
+
+/* Control aside icon -------------------*/
+.connection_icon,
+.geo_access_icon.switch-on,
+.devices_icon {
+  background-color: palegreen;
+  border: 2px solid green;
+}
+
+.connection_icon.offline,
+.devices_icon.disabled_devices {
+  background-color: white;
+  border: none;
+}
+
+.geo_access_icon.switch-off {
+  background-color: yellow;
+  border: 2px solid orangered;
+}
+
+.connection_icon::before {
+  content: "\f233";
+}
+
+.geo_access_icon::before {
+  content: "\f279";
+}
+
+.devices_icon::before {
+  content: "\f03d";
+}
+
+.offline.connection_icon::after,
+.disabled_geo.geo_access_icon::after,
+.geo_send_icon.blocked::after,
+.audio_icon.blocked::after,
+.video_icon.blocked::after,
+.disabled_devices.devices_icon::after {
+  position: absolute;
+  top: -2px;
+  left: 0;
+
+  color: red;
+  font-size: 33px;
+  content: "\f05e";
+}
+
+/* Footer icons -------------------------*/
+.bold_icon::before {
+  content: "\f032";
+}
+
+.italic_icon::before {
+  content: "\f033";
+}
+
+.underline_icon::before {
+  content: "\f0cd";
+}
+
+.strikethrough_icon::before {
+  content: "\f0cc";
+}
+
+.link_icon::before {
+  content: "\f0c1";
+}
+
+.code_icon::before {
+  content: "\f121";
+}
+
+.ol_icon::before {
+  content: "\f0cb";
+}
+
+.ul_icon::before {
+  content: "\f0ca";
+}
+
+.bq_icon::before {
+  content: "\f10e";
+}
+
+.skip_icon::before {
+  content: "\f031";
+}
+
+.audio_icon::before {
+  content: "\f130";
+}
+
+.video_icon::before {
+  content: "\f03d";
+}
+
+.at_icon::before {
+  content: "\f1fa";
+}
+
+.upload_icon::before {
+  content: "\f0c6";
+}
+
+.smile_icon::before {
+  content: "\f118";
+}
+
+.geo_send_icon::before {
+  content: "\f278";
+}
+
+.geo_icon::before {
+  content: "\f041";
+}
+.geo_icon {
+  background-color: indianred;
+}
+
+.geo_icon.geo_true {
+  background-color: palegreen;
+}
+
+.send_icon::before {
+  content: "\f1d8";
+}
+
+/* Tasks icons ----------------------------------*/
+.task-block .icon {
+  width: 20px;
+  height: 20px;
+
+  color: gray;
+  border: none;
+  background: none;
+
+  cursor: pointer;
+  user-select: none;
+}
+
+.edit_icon::before {
+  content: "\f040";
+}
+
+.del_icon::before {
+  content: "\f1f8";
+}
+
+.download_icon::before {
+  content: "\f045";
+}
+
+.visibility_icon::before {
+  content: "\f06e";
+}
+
+.visibility_icon.to-visible::before {
+  content: "\f070";
+}
+
+.pinned_icon::before {
+  content: "\f08d";
+}
+
+.favorite_icon::before {
+  content: "\f006";
+}
+
+.is-favorite .favorite_icon::before,
+.favorite_filter_icon::before {
+  content: "\f005";
+  color: darkorange;
+  font-size: 18px;
+}
+
+.info_panel_close_icon {
+  position: absolute;
+  right: 10px;
+  top: calc(50% - 15px);
+}
+
+.pinned_close_icon::before,
+.info_panel_close_icon::before {
+  content: "\f00d";
+  color: gray;
+  font-size: 20px;
+}
