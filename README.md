@@ -1,6 +1,6 @@
 # Дипломное задание к курсу «Продвинутый JavaScript в браузере». 
 ## Chaos Organizer
-
+[![Node.js CI](https://github.com/PolinaKhodus/ahj-diplom-front/actions/workflows/node.js.yml/badge.svg?branch=main)](https://github.com/PolinaKhodus/ahj-diplom-front/actions/workflows/node.js.yml)
 https://polinakhodus.github.io/ahj-diplom-front/
 
 ### Основной функционал
