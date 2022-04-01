@@ -8,5 +8,8 @@ branches:
   only:
     - master
 
+before_install:
+  - npm install
+  
 script:
   - npm run build
