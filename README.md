@@ -1,6 +1,8 @@
 # Дипломное задание к курсу «Продвинутый JavaScript в браузере». 
 ## Chaos Organizer
 
+https://polinakhodus.github.io/ahj-diplom-front/
+
 ### Основной функционал
   - [x] Сохранение в истории ссылок и текстовых сообщений;   
 
